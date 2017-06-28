@@ -1,0 +1,22 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+  <servlet>
+    <servlet-name>Catalog</servlet-name>
+    <servlet-class>gmail.alexdudarkov.document.web.JspServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Catalog</servlet-name>
+    <url-pattern>/Catalog</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MyServlet</servlet-name>
+    <servlet-class>gmail.alexdudarkov.document.web.MyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyServlet</servlet-name>
+    <url-pattern>/MyServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
